@@ -1,0 +1,329 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%pyspark\n\nfrom pyspark.sql import SparkSession",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T12:24:53+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663502816209_212443127",
+      "id": "paragraph_1663502816209_212443127",
+      "dateCreated": "2022-09-18T12:06:56+0000",
+      "dateStarted": "2022-09-18T12:24:53+0000",
+      "dateFinished": "2022-09-18T12:26:08+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:10055"
+    },
+    {
+      "text": "%pyspark\n\nspark = SparkSession \\\n    .builder \\\n    .appName(\"TestApp\") \\\n    .getOrCreate()",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T12:26:42+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663502839673_1866412705",
+      "id": "paragraph_1663502839673_1866412705",
+      "dateCreated": "2022-09-18T12:07:19+0000",
+      "dateStarted": "2022-09-18T12:26:42+0000",
+      "dateFinished": "2022-09-18T12:26:44+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:10056"
+    },
+    {
+      "text": "%pyspark\nsc = spark.sparkContext",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T14:05:51+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663509947917_1285794838",
+      "id": "paragraph_1663509947917_1285794838",
+      "dateCreated": "2022-09-18T14:05:47+0000",
+      "dateStarted": "2022-09-18T14:05:51+0000",
+      "dateFinished": "2022-09-18T14:05:51+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:10057"
+    },
+    {
+      "text": "%pyspark\n\ndata = sc.parallelize([\n    'Ему не было еще сорока, но у него была уже дочь двенадцати лет и два сына гимназиста.',\n    'Его женили рано, когда он был еще студентом второго курса, и теперь жена казалась в полтора раза старше его.',\n    'Это была женщина высокая, с темными бровями, прямая, важная, солидная и, как она сама себя называла, мыслящая.',\n    'В обществе мужчин ему было скучно, не по себе, с ними он был неразговорчив, холоден, но когда находился среди женщин, то чувствовал себя свободно и знал, о чем говорить с ними и как держать себя; и даже молчать с ними ему было легко.',\n    'В его наружности, в характере, во всей его натуре было что-то привлекательное, неуловимое, что располагало к нему женщин, манило их; он знал об этом, и самого его тоже какая-то сила влекла к ним.'\n    ])\n\ndata.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T14:10:59+0000",
+      "progress": 100,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "['Ему не было еще сорока, но у него была уже дочь двенадцати лет и два сына гимназиста.',\n 'Его женили рано, когда он был еще студентом второго курса, и теперь жена казалась в полтора раза старше его.',\n 'Это была женщина высокая, с темными бровями, прямая, важная, солидная и, как она сама себя называла, мыслящая.',\n 'В обществе мужчин ему было скучно, не по себе, с ними он был неразговорчив, холоден, но когда находился среди женщин, то чувствовал себя свободно и знал, о чем говорить с ними и как держать себя; и даже молчать с ними ему было легко.',\n 'В его наружности, в характере, во всей его натуре было что-то привлекательное, неуловимое, что располагало к нему женщин, манило их; он знал об этом, и самого его тоже какая-то сила влекла к ним.']"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://fea1a8651372:4040/jobs/job?id=2",
+              "$$hashKey": "object:10187"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663503221230_1036368071",
+      "id": "paragraph_1663503221230_1036368071",
+      "dateCreated": "2022-09-18T12:13:41+0000",
+      "dateStarted": "2022-09-18T14:10:59+0000",
+      "dateFinished": "2022-09-18T14:11:02+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:10058"
+    },
+    {
+      "text": "%pyspark\n# Разобъём предложения на слова, удалив при этом знаки препинания, и приведём всё в нижний регистр.\nwords = data.flatMap(lambda x: x.split(' ')).map(lambda x: x.replace(\".\", \"\").replace(\";\", \"\").replace(\",\", \"\")).map(lambda x: x.lower())\nwords.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T19:33:00+0000",
+      "progress": 100,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "['ему',\n 'не',\n 'было',\n 'еще',\n 'сорока',\n 'но',\n 'у',\n 'него',\n 'была',\n 'уже',\n 'дочь',\n 'двенадцати',\n 'лет',\n 'и',\n 'два',\n 'сына',\n 'гимназиста',\n 'его',\n 'женили',\n 'рано',\n 'когда',\n 'он',\n 'был',\n 'еще',\n 'студентом',\n 'второго',\n 'курса',\n 'и',\n 'теперь',\n 'жена',\n 'казалась',\n 'в',\n 'полтора',\n 'раза',\n 'старше',\n 'его',\n 'это',\n 'была',\n 'женщина',\n 'высокая',\n 'с',\n 'темными',\n 'бровями',\n 'прямая',\n 'важная',\n 'солидная',\n 'и',\n 'как',\n 'она',\n 'сама',\n 'себя',\n 'называла',\n 'мыслящая',\n 'в',\n 'обществе',\n 'мужчин',\n 'ему',\n 'было',\n 'скучно',\n 'не',\n 'по',\n 'себе',\n 'с',\n 'ними',\n 'он',\n 'был',\n 'неразговорчив',\n 'холоден',\n 'но',\n 'когда',\n 'находился',\n 'среди',\n 'женщин',\n 'то',\n 'чувствовал',\n 'себя',\n 'свободно',\n 'и',\n 'знал',\n 'о',\n 'чем',\n 'говорить',\n 'с',\n 'ними',\n 'и',\n 'как',\n 'держать',\n 'себя',\n 'и',\n 'даже',\n 'молчать',\n 'с',\n 'ними',\n 'ему',\n 'было',\n 'легко',\n 'в',\n 'его',\n 'наружности',\n 'в',\n 'характере',\n 'во',\n 'всей',\n 'его',\n 'натуре',\n 'было',\n 'что-то',\n 'привлекательное',\n 'неуловимое',\n 'что',\n 'располагало',\n 'к',\n 'нему',\n 'женщин',\n 'манило',\n 'их',\n 'он',\n 'знал',\n 'об',\n 'этом',\n 'и',\n 'самого',\n 'его',\n 'тоже',\n 'какая-то',\n 'сила',\n 'влекла',\n 'к',\n 'ним']"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://fea1a8651372:4040/jobs/job?id=22",
+              "$$hashKey": "object:10204"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663504394639_542188875",
+      "id": "paragraph_1663504394639_542188875",
+      "dateCreated": "2022-09-18T12:33:14+0000",
+      "dateStarted": "2022-09-18T19:33:00+0000",
+      "dateFinished": "2022-09-18T19:33:02+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:10059"
+    },
+    {
+      "text": "%pyspark\n# Проставим напротив каждого слова 1 и посчитаем с помощью reduceByKey количество вхождений каждого слова.\nfrom operator import add\nwords.map(lambda x: (x, 1)).reduceByKey(add).collect()",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T19:33:10+0000",
+      "progress": 50,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[('еще', 2),\n ('и', 7),\n ('это', 1),\n ('темными', 1),\n ('важная', 1),\n ('мыслящая', 1),\n ('по', 1),\n ('холоден', 1),\n ('во', 1),\n ('нему', 1),\n ('этом', 1),\n ('тоже', 1),\n ('ему', 3),\n ('было', 4),\n ('гимназиста', 1),\n ('его', 5),\n ('студентом', 1),\n ('жена', 1),\n ('себя', 3),\n ('говорить', 1),\n ('молчать', 1),\n ('привлекательное', 1),\n ('их', 1),\n ('сила', 1),\n ('не', 2),\n ('была', 2),\n ('старше', 1),\n ('она', 1),\n ('обществе', 1),\n ('себе', 1),\n ('среди', 1),\n ('то', 1),\n ('неуловимое', 1),\n ('но', 2),\n ('него', 1),\n ('двенадцати', 1),\n ('рано', 1),\n ('курса', 1),\n ('в', 4),\n ('как', 2),\n ('скучно', 1),\n ('чувствовал', 1),\n ('свободно', 1),\n ('знал', 2),\n ('даже', 1),\n ('легко', 1),\n ('наружности', 1),\n ('характере', 1),\n ('что-то', 1),\n ('располагало', 1),\n ('манило', 1),\n ('об', 1),\n ('влекла', 1),\n ('уже', 1),\n ('дочь', 1),\n ('когда', 2),\n ('казалась', 1),\n ('высокая', 1),\n ('солидная', 1),\n ('о', 1),\n ('к', 2),\n ('ним', 1),\n ('у', 1),\n ('он', 3),\n ('раза', 1),\n ('женщина', 1),\n ('сама', 1),\n ('мужчин', 1),\n ('неразговорчив', 1),\n ('находился', 1),\n ('чем', 1),\n ('держать', 1),\n ('натуре', 1),\n ('что', 1),\n ('сорока', 1),\n ('сына', 1),\n ('второго', 1),\n ('с', 4),\n ('прямая', 1),\n ('называла', 1),\n ('ними', 3),\n ('всей', 1),\n ('самого', 1),\n ('какая-то', 1),\n ('лет', 1),\n ('два', 1),\n ('женили', 1),\n ('был', 2),\n ('теперь', 1),\n ('полтора', 1),\n ('бровями', 1),\n ('женщин', 2)]"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://fea1a8651372:4040/jobs/job?id=23",
+              "$$hashKey": "object:10221"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663527231689_2094950796",
+      "id": "paragraph_1663527231689_2094950796",
+      "dateCreated": "2022-09-18T18:53:51+0000",
+      "dateStarted": "2022-09-18T19:33:11+0000",
+      "dateFinished": "2022-09-18T19:33:13+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:10060"
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-18T19:11:44+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1663528304310_1419948334",
+      "id": "paragraph_1663528304310_1419948334",
+      "dateCreated": "2022-09-18T19:11:44+0000",
+      "status": "READY",
+      "$$hashKey": "object:10061"
+    }
+  ],
+  "name": "Lesson3_HW_Bogdanova",
+  "id": "2HE7223Z6",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Lesson3_HW_Bogdanova"
+}
